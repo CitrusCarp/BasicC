@@ -5,8 +5,8 @@ main()
     float r,area,volume;
     printf("enter radius=");
     scanf("%f",&r);
-    area=4* pi* r* r;
-    volume= (4/3)* pi* r* r* r;
+    area=4*pi*r*r;
+    volume=(4/3)*pi*r*r*r;
     printf("area of sphere=%f and volume=%f",area,volume);
     
 }
