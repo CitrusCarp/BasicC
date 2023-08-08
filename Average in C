@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() 
+{
+    int a,b,c,e,n;
+    printf("enter first no.a=");
+    scanf("%d",&a);
+    printf("enter second no.b=");
+    scanf("%d",&b);
+    printf("enter third no.c=");
+    scanf("%d",&c);
+    e=a+b+c;
+    n=e/3;
+    printf("sum is %d",e);
+    printf("\n");
+    printf("average is %d",n);
+
+    return 0;
+}
