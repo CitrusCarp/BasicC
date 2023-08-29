@@ -1,0 +1,53 @@
+#include <stdio.h>
+main()
+{
+    int a,b,opt;
+    printf("enter first no.=");
+    scanf("%d",&a);
+    printf("enter second no.=");
+    scanf("%d",&b);
+    printf("select option\n 1-Add\n 2-Substract\n 3-Multiply\n 4-Divide\n enter option=");
+    scanf("%d",&opt);
+    switch(opt)
+    {
+        case 1:printf("additon is %d",a+b);
+        break;
+        case 2:printf("Substraction is %d",a-b);
+        break;
+        case 3:printf("Multiplication is %d",a*b);
+        break;
+        case 4:printf("Division is %d",a/b);
+        break;
+        default:printf("Invalid no.");
+        break;
+    }
+}
+
+
+
+#include <stdio.h>
+main()
+{
+    int a,b,opt;
+    printf("enter first no.=");
+    scanf("%d",&a);
+    printf("enter second no.=");
+    scanf("%d",&b);
+    printf("************************************");
+    printf("\nselect option\n 1-Add\n 2-Substract\n 3-Multiply\n 4-Divide \n  ****************************\n enter option=");
+    scanf("%d",&opt);
+    printf("************************************\n");
+    switch(opt)
+    {
+        case 1:printf("additon is %d",a+b);
+        break;
+        case 2:printf("Substraction is %d",a-b);
+        break;
+        case 3:printf("Multiplication is %d",a*b);
+        break;
+        case 4:printf("Division is %d",a/b);
+        break;
+        default:printf("Invalid no.");
+        break;
+    }
+}
