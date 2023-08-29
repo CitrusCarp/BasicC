@@ -15,7 +15,7 @@ main()
     {
         case 1:printf("Addition is %0.3f",a+b);
         break;
-        case 2:printf("Substraction is 0.3%f",a-b);
+        case 2:printf("Substraction is %0.3f",a-b);
         break;
         case 3:printf("Multiplication is %0.3f",a*b);
         break;
