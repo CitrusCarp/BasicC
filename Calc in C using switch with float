@@ -7,17 +7,19 @@ main()
     scanf("%f",&a);
     printf("enter second no.=");
     scanf("%f",&b);
-    printf("select option\n 1-Add\n 2-Substract\n 3-Multiply\n 4-Divide\n enter option=");
+    printf("********************");
+    printf("\nselect option\n1-Add\n2-Substract\n3-Multiply\n4-Divide\n********************\nenter option=");
     scanf("%d",&opt);
+    printf("\n********************\n");
     switch(opt)
     {
-        case 1:printf("additon is %f",a+b);
+        case 1:printf("Addition is %0.3f",a+b);
         break;
-        case 2:printf("Substraction is %f",a-b);
+        case 2:printf("Substraction is 0.3%f",a-b);
         break;
-        case 3:printf("Multiplication is %f",a*b);
+        case 3:printf("Multiplication is %0.3f",a*b);
         break;
-        case 4:printf("Division is %f",a/b);
+        case 4:printf("Division is %0.3f",a/b);
         break;
         default:printf("Invalid no.");
         break;
