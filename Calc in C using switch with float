@@ -19,7 +19,7 @@ main()
         break;
         case 3:printf("Multiplication is %0.3f",a*b);
         break;
-        case 4:printf("Division is %0.3f",a/b);
+        case 4:printf("Division is %f",a/b);
         break;
         default:printf("Invalid no.");
         break;
