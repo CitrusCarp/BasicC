@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main()
+{
+    int i,rem,q,n,user_no,rev=0;
+    printf("enter no.=");
+    scanf("%d",&n);
+    user_no=n;
+    for(i=1;n>0;i++)
+    {
+        rem=n%10;
+        rev=(rev*10)+rem;
+        q=n/10;
+        n=q;
+    }
+    if(user_no==rev)
+    {
+        printf("no. is palindrome");
+    }
+    else
+    {
+        printf("no. is not palindrome");
+    }
+}
