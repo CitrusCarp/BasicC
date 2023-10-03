@@ -1,0 +1,13 @@
+#include <stdio.h>
+main()
+{
+    char name[20];
+    int i=0;
+    printf("enter name=");
+    gets(name);
+    while(name[i]!='\0')
+    {
+        i++;
+    }
+    printf("length is %d",i);
+}
