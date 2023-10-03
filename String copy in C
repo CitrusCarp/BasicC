@@ -1,0 +1,8 @@
+#include <stdio.h>
+main()
+{
+    char a[10]="hello";
+    char b[10];
+    strcpy(b,a);
+    printf("string b is %s",b);
+}
