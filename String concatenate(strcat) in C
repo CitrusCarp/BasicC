@@ -1,0 +1,7 @@
+#include <stdio.h>
+main()
+{
+    char fn[10]="Abdullah";
+    char ln[10]=" Nasir";
+    printf("name is %s",strcat(fn,ln));
+}
