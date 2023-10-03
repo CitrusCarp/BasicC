@@ -1,0 +1,19 @@
+#include <stdio.h>
+main()
+{
+    char a[10]="Abdullah";
+    char b[10]=" Nasir";
+    printf("name is %s",strcat(a,b));
+    printf("\nlength is %d",strlen(a));
+    strcpy(a,b);
+    printf("\nstring b is %s",b);
+    if(strcmp(a,b)==0)
+    {
+        printf("\nBoth sting are same");
+    }
+    else
+    {
+        printf("\nBoth string are not same");
+    }
+    
+}
