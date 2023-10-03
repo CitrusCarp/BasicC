@@ -1,0 +1,16 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main()
+{
+    char a[10]="hello";
+    char b[10]="hi";
+    if(strcmp(a,b)==0)
+    {
+        printf("same");
+    }
+    else
+    {
+        printf("not same");
+    }
+}
