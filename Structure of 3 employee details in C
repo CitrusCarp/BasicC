@@ -1,0 +1,26 @@
+#include <stdio.h>
+struct employee
+{
+    int age;
+    char name[20];
+    char city[20];
+    char street[20];
+}S[3];
+main()
+{
+    int i;
+    for(i=0;i<3;i++)
+    {
+        printf("enter name,age,city and street=");
+        scanf("%s%d%s%s",S[i].name,&S[i].age,S[i].city,S[i].street);
+    }
+    for(i=0;i<3;i++)
+    {
+        printf("\nDetails of employee\n");
+        printf("name=%s\n",S[i].name);
+        printf("age=%d\n",S[i].age);
+        printf("city=%s\n",S[i].city);
+        printf("street=%s",S[i].street);
+        
+    }
+}
