@@ -1,0 +1,23 @@
+#include <stdio.h>
+#define M 30
+S()
+{
+    printf("*************************\n");
+}
+struct PersonalInfo
+{
+    char pname[M];
+    int age;
+}P;
+main()
+{
+    printf("enter name=");
+    scanf("%s",P.pname);
+    printf("enter age=");
+    scanf("%d",&P.age);
+    if(P.age>8)
+    S();
+    printf("age=%d\nEligible to continue\nHello %s welcome to Calculator");
+    
+    
+}
