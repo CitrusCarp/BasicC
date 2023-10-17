@@ -1,6 +1,6 @@
 #include <stdio.h>
 #define M 30
-S()
+void S()
 {
     printf("*************************************\n");
 }
@@ -20,14 +20,36 @@ void divide(float x,float y)
 {
     printf("division is %0.3f",x/y);
 }
+void circle(float R)
+{
+    float a,p;
+    a=3.14*R*R;
+    p=2*3.14*R;
+    printf("Area=%0.3f and Perimeter=%0.3f",a,p);
+}
+void rectangle(int x,int y)
+{
+    int a,p;
+    a=x*y;
+    p=2*(x+y);
+    printf("Area=%d and Perimeter=%d",a,p);
+}
+void square(int x)
+{
+    int a,p;
+    a=x*x;
+    p=4*x;
+    printf("Area=%d and Perimeter=%d",a,p);
+}
 struct PersonalInfo
 {
     char pname[M];
     int Class;
 }P;
-main()
+void main()
 {
-    int a,b,r,opt;
+    int a,b,opt;
+    float r;
     printf("enter name=");
     scanf("%s",P.pname);
     printf("enter class=");
@@ -35,8 +57,15 @@ main()
     S();
     printf("Hello %s of class %d\nAnd\nWelcome to Calculator\n",P.pname,P.Class);
     S();
+    printf("enter no.a=");
+    scanf("%d",&a);
+    printf("enter no.b=");
+    scanf("%d",&b);
+    S();
+    printf("enter radius=");
+    scanf("%f",&r);
+    S();
     printf("Select option\n1-Add\n2-Substract\n3-Multiply\n4-Divide\n5-Area and perimeter of Circle\n6-Area and perimeter of Traingle\n7-Area and perimeter of Rectangle\n8-Area and perimeter of Square\n9-Matrices\nEnter option=");
     scanf("%d",&opt);
     S();
-    switch(opt)
 }
