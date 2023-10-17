@@ -7,33 +7,18 @@ S()
 struct PersonalInfo
 {
     char pname[M];
-    int age;
+    int Class;
 }P;
 main()
 {
     int opt;
     printf("enter name=");
     scanf("%s",P.pname);
-    printf("enter age=");
-    scanf("%d",&P.age);
-    if(P.age>8)
+    printf("enter class=");
+    scanf("%d",&P.Class);
     S();
-    printf("age=%d\nEligible to continue\n",P.age);
+    printf("Hello %s of class %d\nAnd\nWelcome to Calculator\n",P.pname,P.Class);
     S();
-    printf("Hello %s\nAnd\nWelcome to Calculator\n",P.pname);
-    S();
-    printf("Select option\n1-Basic=+,-,*,%\n2-Standard=Surface and Area=");
+    printf("Select option\n1-Add\n2-Substract\n3-Multiply\n4-Divide");
     scanf("%d",&opt);
-    switch(opt)
-    {
-        case 1:
-        printf("Basic");
-        break;
-        case 2:
-        printf("Standard");
-        break;
-        default:
-        printf("invalid no.");
-        break;
-    }
 }
