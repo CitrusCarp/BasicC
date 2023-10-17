@@ -1,0 +1,19 @@
+#include <stdio.h>
+void circle(float r)
+{
+    float d,c,a;
+    printf("\nenter radius:%f",r);
+    d=2*r;
+    printf("\ndiameter=%f",d);
+    c=2*3.14*r;
+    printf("\ncircumference=%f",c);
+    a=3.14*r*r;
+    printf("\narea=%f",a);
+}
+void main()
+{
+    float radius;
+    printf("enter r");
+    scanf("%f",&radius);
+    circle(radius);
+}
