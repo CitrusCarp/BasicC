@@ -2,7 +2,23 @@
 #define M 30
 S()
 {
-    printf("*************************\n");
+    printf("*************************************\n");
+}
+void add(int x,int y)
+{
+    printf("addition is %d",x+y);
+}
+void substract(int x,int y)
+{
+    printf("substraction is %d",x-y);
+}
+void multiply(int x,int y)
+{
+    printf("multiplication is %d",x*y);
+}
+void divide(float x,float y)
+{
+    printf("division is %0.3f",x/y);
 }
 struct PersonalInfo
 {
@@ -11,7 +27,7 @@ struct PersonalInfo
 }P;
 main()
 {
-    int opt;
+    int a,b,r,opt;
     printf("enter name=");
     scanf("%s",P.pname);
     printf("enter class=");
@@ -19,6 +35,8 @@ main()
     S();
     printf("Hello %s of class %d\nAnd\nWelcome to Calculator\n",P.pname,P.Class);
     S();
-    printf("Select option\n1-Add\n2-Substract\n3-Multiply\n4-Divide");
+    printf("Select option\n1-Add\n2-Substract\n3-Multiply\n4-Divide\n5-Area and perimeter of Circle\n6-Area and perimeter of Traingle\n7-Area and perimeter of Rectangle\n8-Area and perimeter of Square\n9-Matrices\nEnter option=");
     scanf("%d",&opt);
+    S();
+    switch(opt)
 }
