@@ -2,7 +2,11 @@
 #define M 30
 void S()
 {
-    printf("*************************************\n");
+    printf("*******************************************************************************\n");
+}
+void L()
+{
+    printf("_______________________________________________________________________________\n");
 }
 void add(int x,int y)
 {
@@ -27,6 +31,12 @@ void circle(float R)
     p=2*3.14*R;
     printf("Area=%0.3f and Perimeter=%0.3f",a,p);
 }
+void triangle(int x,int y)
+{
+    int a,p;
+    a=(1/2)*x*y;
+    printf("Area of triangle is %d",a);
+}
 void rectangle(int x,int y)
 {
     int a,p;
@@ -48,24 +58,81 @@ struct PersonalInfo
 }P;
 void main()
 {
-    int a,b,opt;
+    int a,b,s,l,u,m,o,opt;
     float r;
-    printf("enter name=");
+    printf("Enter name=");
     scanf("%s",P.pname);
-    printf("enter class=");
+    printf("Enter class=");
     scanf("%d",&P.Class);
     S();
     printf("Hello %s of class %d\nAnd\nWelcome to Calculator\n",P.pname,P.Class);
     S();
-    printf("enter no.a=");
+    printf("Our Calculator can perform mathematical calculations on the following:\n1-Add\n2-Substract\n3-Multiply\n4-Divide\n5-Area and perimeter of Circle\n6-Area and perimeter of Square\n7-Area and perimeter of Rectangle\n8-Area of Triangle\n9-Matrices\n");
+    S();
+    L();
+    printf("Following data entry is for:Addition,Substraction,Multiplication and Division.\nIf you wish to skip,enter any no. and click enter.\n");
+    L();
+    printf("Enter no.a=");
     scanf("%d",&a);
-    printf("enter no.b=");
+    printf("Enter no.b=");
     scanf("%d",&b);
     S();
-    printf("enter radius=");
+    L();
+    printf("Following data entry is for finding Area and perimeter of Circle\nIf you wish to skip enter any no. and click enter.\n");
+    L();
+    printf("Enter radius=");
     scanf("%f",&r);
     S();
-    printf("Select option\n1-Add\n2-Substract\n3-Multiply\n4-Divide\n5-Area and perimeter of Circle\n6-Area and perimeter of Traingle\n7-Area and perimeter of Rectangle\n8-Area and perimeter of Square\n9-Matrices\nEnter option=");
+    L();
+    printf("Following data entry is for finding Area and perimeter of square\nIf you wish to skip enter any no. and click enter\n");
+    L();
+    printf("Enter length=");
+    scanf("%d",&s);
+    S();
+    L();
+    printf("Following data entry is for finding Area and perimeter of Rectangle\nIf you wish to skip enter any no. and click enter\n");
+    L();
+    printf("Enter length=");
+    scanf("%d",&l);
+    printf("Enter breadth=");
+    scanf("%d",&u);
+    S();
+    L();
+    printf("Following data entry is for finding Area and perimeter of Triangle\nIf you wish to skip enter any no. and click enter\n");
+    L();
+    printf("Enter base=");
+    scanf("%d",&m);
+    printf("Enter height=");
+    scanf("%d",&o);
+    S();
+    printf("Select option\n1-Add\n2-Substract\n3-Multiply\n4-Divide\n5-Area and perimeter of Circle\n6-Area and perimeter of Square\n7-Area and perimeter of Rectangle\n8-Area of Triangle\n9-Matrices\nEnter option=");
     scanf("%d",&opt);
     S();
+    switch(opt)
+    {
+        case 1:
+        add(a,b);
+        break;
+        case 2:
+        substract(a,b);
+        break;
+        case 3:
+        multiply(a,b);
+        break;
+        case 4:
+        divide(a,b);
+        break;
+        case 5:
+        circle(r);
+        break;
+        case 6:
+        square(s);
+        break;
+        case 7:
+        rectangle(l,u);
+        break;
+        case 8:
+        triangle(m,o);
+        break;
+    }
 }
